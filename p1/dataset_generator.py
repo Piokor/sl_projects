@@ -22,5 +22,3 @@ def get_additional_data(word):
     length = len(word)
     justed_size = length + random.randint(-2, 20)
     return str(justed_size), random_string(1)
-
-generate_dataset(100000)

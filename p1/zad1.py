@@ -2,7 +2,7 @@ import csv
 import time
 
 def rjust_my(string, length, character=" "):
-    just_len = length - len(string) if length - len(string) < 0 else 0 
+    just_len = length - len(string)
     return character * just_len + string
 
 def load_data():
@@ -13,14 +13,25 @@ def load_data():
             result.append((row[0], int(row[1]), row[2]))
     return result
 
-data = load_data()
+def save_result(results, filename):
+    with open(filename, 'w') as result_file:
+        for result in results:
+            result_file.write(result + "\n")
 
-start = time.time()
-for x in data:
-    rjust_my(x[0], x[1], x[2])
-print(time.time() - start)
+# data = load_data()
 
-start = time.time()
-for x in data:
-    x[0].rjust(x[1], x[2])
-print(time.time() - start)
+# start = time.time()
+# for x in data:
+#     rjust_my(x[0], x[1], x[2])
+# print(time.time() - start)
+
+# start = time.time()
+# for x in data:
+#     x[0].rjust(x[1], x[2])
+# print(time.time() - start)
+
+# start = time.time()
+# for x in data:
+#     pass
+# print(time.time() - start)
+
