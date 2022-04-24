@@ -13,4 +13,4 @@ class HelpWindow(QMainWindow):
         self.setCentralWidget(self._centralWidget)
         self._generalLayout = QVBoxLayout()
         self._centralWidget.setLayout(self._generalLayout)
-        self._generalLayout.addWidget(QLabel('Wciśnij na komórkę aby zmienić jej stan.\nWciśnij przycisk "Start", aby rozpocząć automatyczną symulację, której prędkość można zmienić suwakiem.\nWciśnij przycisk "Następna", aby wyświetlić kolejną epokę.\nWciśnij przycisk "Reset", aby zresetować stan tablicy"))'))
+        self._generalLayout.addWidget(QLabel('Wciśnij na komórkę aby zmienić jej stan.\nWciśnij przycisk "Start", aby rozpocząć automatyczną symulację, której prędkość można zmienić suwakiem.\nWciśnij przycisk "Następna", aby wyświetlić kolejną epokę.\nWciśnij przycisk "Reset", aby zresetować stan tablicy'))

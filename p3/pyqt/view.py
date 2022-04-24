@@ -40,6 +40,7 @@ class GofWindow(QMainWindow):
         self.EMPTY_COLOR = QColor(255, 255, 255)
         self.FILL_COLOR = QColor(70, 70, 70)
         self.INITIAL_SPEED = 10
+        print(self.WINDOW_SIZE)
 
     def _setupWindow(self):
         self.setGeometry(200, 50, *self.WINDOW_SIZE)

@@ -1,0 +1,1 @@
+from pygtk.view import GolWindow
